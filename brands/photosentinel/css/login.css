@@ -1,0 +1,26 @@
+﻿.ps-page-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-login-page-content {
+    min-width: 500px;
+}
+
+.label-forgot {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.label-signup a {
+    color: #fff;
+    text-decoration: underline;
+}

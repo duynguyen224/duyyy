@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+    <base href="/deployyyyyy/" />
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css?v=VERSION_PLACEHOLDER" />
+
+    <!--Default Blazor WASM app.css-->
+    <link rel="stylesheet" href="css/app.css?v=VERSION_PLACEHOLDER" />
+
+    <!--Video js-->
+    <link rel="stylesheet" href="assets/libs/video-js/video-js.css?v=VERSION_PLACEHOLDER" />
+
+    <!--Simplebar-->
+    <link rel="stylesheet" href="assets/libs/simplebar/simplebar.css?v=VERSION_PLACEHOLDER" />
+
+    <!--App css-->
+    <link rel="stylesheet" href="css/common.css?v=VERSION_PLACEHOLDER" />
+    <link rel="stylesheet" href="css/login.css?v=VERSION_PLACEHOLDER" />
+    <link rel="stylesheet" href="css/admin.css?v=VERSION_PLACEHOLDER" />
+    <link rel="icon" type="image/png" href="assets/images/logo.ico?v=VERSION_PLACEHOLDER" />
+
+    <link href="PhotoSentinelInterface.styles.css?v=VERSION_PLACEHOLDER" rel="stylesheet" />
+
+    <style>
+        /* Manrope Font Family */
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-ExtraLight.ttf') format('truetype');
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-Semibold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Manrope';
+            src: url('assets/fonts/manrope/Manrope-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /*common css assets url*/
+        .ps-bg-construction {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/login-background.jpg');
+        }
+
+        .ps-date-range-picker {
+            background-image: url("assets/icons/calendar.svg"), url("assets/icons/Dropdown Icon.svg");
+        }
+
+        .ps-toast.ps-toast-success .ps-toast-icon {
+            background-image: url('assets/icons/Success Toast.svg');
+        }
+
+        .ps-toast.ps-toast-info .ps-toast-icon {
+            background-image: url('assets/icons/Info Toast.svg');
+        }
+
+        .ps-toast.ps-toast-warning .ps-toast-icon {
+            background-image: url('assets/icons/Warning Toast.svg');
+        }
+
+        .ps-toast.ps-toast-danger .ps-toast-icon {
+            background-image: url('assets/icons/Danger Toast.svg');
+        }
+    </style>
+
+    <noscript>
+        <style>
+            /**
+            * Reinstate scrolling for non-JS clients
+            */
+            .simplebar-content-wrapper {
+                scrollbar-width: auto;
+                -ms-overflow-style: auto;
+            }
+
+                .simplebar-content-wrapper::-webkit-scrollbar,
+                .simplebar-hide-scrollbar::-webkit-scrollbar {
+                    display: initial;
+                    width: initial;
+                    height: initial;
+                }
+        </style>
+    </noscript>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="assets/images/blazor-wasm-loading.gif" height="500" />
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <!--Bootstrap-->
+    <script type="text/javascript" src="assets/libs/bootstrap/bootstrap.bundle.min.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--jQuery-->
+    <script src="assets/libs/jquery/jquery-3.7.1.min.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--Apple maps-->
+    <script src="assets/libs/applemaps/mapkit.js?v=VERSION_PLACEHOLDER"></script>
+    <script src="js/apple-maps.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--Video js-->
+    <script src="assets/libs/video-js/video.min.js?v=VERSION_PLACEHOLDER"></script>
+    <script src="assets/libs/video-js/videojs-http-streaming.min.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--Simplebar-->
+    <script src="assets/libs/simplebar/simplebar.min.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--Panzoom-->
+    <script src="assets/libs/panzoom/panzoom.min.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--App js-->
+    <script type="text/javascript" src="js/draw-polygon.js?v=VERSION_PLACEHOLDER"></script>
+    <script type="text/javascript" src="js/keyboard-navigation.js?v=VERSION_PLACEHOLDER"></script>
+    <script type="text/javascript" src="js/panzoom.js?v=VERSION_PLACEHOLDER"></script>
+    <script type="text/javascript" src="js/app.js?v=VERSION_PLACEHOLDER"></script>
+
+    <!--Default Blazor WASM-->
+    <script src="_framework/blazor.webassembly.js?v=VERSION_PLACEHOLDER"></script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+﻿:root {
+    /* Font size */
+    --ps-text-sm: 12px;
+    --ps-text-md: 15px;
+    --ps-text-lg: 16px;
+    --ps-text-xl: 20px;
+    --ps-text-xxl: 32px;
+    /* Color */
+    --ps-bg-primary: #FFC41C;
+    --ps-bg-primary-hover: #FFE28F;
+    --ps-bg-dark: #11121D;
+    --ps-bg-dark-hover: #414462;
+    --ps-bg-body: #252635;
+    --ps-text-primary: #FFC41C;
+    --ps-text-secondary: #A6A6A6;
+    --ps-bg-warning: #fd7653;
+    --ps-bg-warning-hover: #ff8f6d;
+    --ps-bg-danger: #dc2f02;
+    --ps-bg-danger-hover: #e4380d;
+    --ps-toast-success: #40916C;
+    --ps-toast-info: #81A4CD;
+    --ps-toast-warning: #E0A600;
+    --ps-toast-danger: #FD4A1C;
+    /* Radius */
+    --ps-radius-xs: 4px;
+    --ps-radius-sm: 8px;
+    --ps-radius-md: 16px;
+    --ps-radius-lg: 26px;
+    /* Blur */
+    --ps-blur: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-size: var(--ps-text-lg) !important;
+    color: #fff !important;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select, label {
+    font-family: inherit;
+}
+
+/* Font size */
+.ps-text-sm {
+    font-size: var(--ps-text-sm);
+}
+
+.ps-text-md {
+    font-size: var(--ps-text-md);
+}
+
+.ps-text-lg {
+    font-size: var(--ps-text-lg);
+}
+
+.ps-text-xl {
+    font-size: var(--ps-text-xl);
+}
+
+.ps-text-xxl {
+    font-size: var(--ps-text-xxl);
+}
+
+.ps-text-bold {
+    font-weight: 600;
+}
+
+/* Background color */
+.ps-bg-primary {
+    background-color: var(--ps-bg-primary);
+}
+
+.ps-bg-dark {
+    background-color: var(--ps-bg-dark);
+}
+
+.ps-bg-dark-hover {
+    background-color: var(--ps-bg-dark-hover);
+}
+
+.ps-bg-black {
+    background-color: #000;
+}
+
+/* Text color */
+.ps-text-primary {
+    color: var(--ps-text-primary);
+}
+
+.ps-text-secondary {
+    color: var(--ps-text-secondary);
+}
+
+.ps-text-warning {
+    color: var(--ps-bg-warning);
+}
+
+.ps-text-danger {
+    color: var(--ps-bg-danger) !important;
+}
+
+/* Button */
+.ps-btn {
+    outline: none;
+    border: none;
+    border-radius: var(--ps-radius-lg);
+    padding: 0px 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .ps-btn:disabled {
+        cursor: not-allowed;
+    }
+
+    .ps-btn.ps-btn-sm {
+        font-size: var(--ps-text-sm);
+        height: 25px;
+    }
+
+.ps-btn-outline {
+    background: inherit;
+    color: inherit;
+}
+
+.ps-btn-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.ps-btn-primary {
+    background-color: var(--ps-bg-primary);
+    color: var(--ps-bg-body);
+}
+
+    .ps-btn-primary svg path {
+        stroke: var(--ps-bg-body);
+    }
+
+    .ps-btn-primary:hover {
+        background-color: var(--ps-bg-primary-hover);
+    }
+
+.ps-btn-dark {
+    background-color: var(--ps-bg-dark);
+    color: #fff;
+}
+
+    .ps-btn-dark:hover {
+        background-color: var(--ps-bg-dark-hover);
+    }
+
+.ps-btn-light {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+    .ps-btn-light:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+.ps-btn-warning {
+    background-color: var(--ps-bg-warning);
+}
+
+    .ps-btn-warning:hover {
+        background-color: var(--ps-bg-warning-hover);
+    }
+
+.ps-btn-danger {
+    background-color: var(--ps-bg-danger);
+    color: #fff;
+}
+
+    .ps-btn-danger:hover {
+        background-color: var(--ps-bg-danger-hover);
+    }
+
+/* Form control */
+.ps-form-control {
+    background-color: var(--ps-bg-dark);
+    height: 30px;
+    color: #fff;
+    border-radius: var(--ps-radius-lg) !important;
+}
+
+.ps-form-control-sm {
+    height: 25px;
+}
+
+.ps-radio input[type="radio"] {
+    display: none;
+}
+
+.ps-radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--ps-text-md);
+}
+
+.ps-radio input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: 1px solid #8385A0;
+}
+
+.ps-radio input[type="radio"] + label {
+    color: #8385A0;
+}
+
+.ps-radio input[type="radio"]:checked + label {
+    color: #fff;
+}
+
+    .ps-radio input[type="radio"]:checked + label:before {
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: radial-gradient(circle, #fff 50%, transparent 60%);
+    }
+
+.ps-switch input:focus {
+    box-shadow: none;
+}
+
+.ps-switch input:checked {
+    background-color: var(--ps-text-primary);
+    border-color: var(--ps-text-primary);
+}
+
+
+/* Border & rounded */
+.ps-rounded-xs {
+    border-radius: var(--ps-radius-xs);
+}
+
+.ps-rounded-sm {
+    border-radius: var(--ps-radius-sm);
+}
+
+.ps-rounded-md {
+    border-radius: var(--ps-radius-md);
+}
+
+.ps-rounded-lg {
+    border-radius: var(--ps-radius-lg);
+}
+
+.ps-rounded-top-left-0 {
+    border-top-left-radius: 0;
+}
+
+.ps-rounded-top-right-0 {
+    border-top-right-radius: 0;
+}
+
+.ps-rounded-bottom-left-0 {
+    border-bottom-left-radius: 0;
+}
+
+.ps-rounded-bottom-right-0 {
+    border-bottom-right-radius: 0;
+}
+
+/* Toast */
+.ps-toast .ps-toast-icon {
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0.8rem;
+}
+
+
+
+.ps-toast-success {
+    background-color: var(--ps-toast-success);
+}
+
+.ps-toast-info {
+    background-color: var(--ps-toast-info);
+}
+
+.ps-toast-warning {
+    background-color: var(--ps-toast-warning);
+}
+
+.ps-toast-danger {
+    background-color: var(--ps-toast-danger);
+}
+
+/* Utils */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed !important;
+}
+
+.cursor-initial {
+    cursor: initial !important;
+}
+
+.cursor-wait {
+    cursor: wait;
+}
+
+.cursor-progress {
+    cursor: progress;
+}
+
+.ps-list-style-type-none {
+    list-style-type: none;
+}
+
+.ps-flex-1 {
+    flex: 1;
+}
+
+.h-98 {
+    height: 98%;
+}
+
+a.ps-btn.disabled {
+    pointer-events: none;
+    background-color: #e6e6e6;
+    color: #bcbcbc;
+}
+
+/* Logo spinner*/
+.ps-logo-spinner {
+    display: inline-block;
+    animation: rotateIcon 1.5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
